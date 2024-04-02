@@ -1,9 +1,9 @@
-from random import choice
+import secrets
 
 fruit = ['apple', 'banana', 'cherry', 'straw berry']
-res = choice(fruit)
+res = secrets.SystemRandom().choice(fruit)
 print(res)
-res = choice(fruit)
+res = secrets.SystemRandom().choice(fruit)
 print(res)
-res = choice(fruit)
+res = secrets.SystemRandom().choice(fruit)
 print(res)
