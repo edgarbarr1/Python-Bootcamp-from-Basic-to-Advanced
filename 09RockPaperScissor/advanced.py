@@ -1,4 +1,4 @@
-import random
+import secrets
 
 print("Rock...")
 print("Paper...")
@@ -8,7 +8,7 @@ options = ["rock", "papers", "scissors"]
 print("Enter Your Move:")
 me = input()
 
-rand = random.randint(0, 2)
+rand = secrets.SystemRandom().randint(0, 2)
 pc = options[rand]
 
 player_one = me
