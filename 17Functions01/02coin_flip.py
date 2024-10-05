@@ -1,8 +1,8 @@
-from random import random
+import secrets
 
 
 def flip_coin():
-    rand = random()
+    rand = secrets.SystemRandom().random()
     if rand >= 0.5:
         return "Heads"
     else:
@@ -11,7 +11,7 @@ def flip_coin():
 
 # function ovverriding
 def flip_coin():
-    if random() >= 0.5:
+    if secrets.SystemRandom().random() >= 0.5:
         return "HEADS"
     else:
         return "TAILS"
