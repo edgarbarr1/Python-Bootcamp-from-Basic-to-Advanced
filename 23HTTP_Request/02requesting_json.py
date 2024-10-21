@@ -1,8 +1,8 @@
-import requests
+from security import safe_requests
 
 url = "https://icanhazdadjoke.com/"
 
-response = requests.get(url, headers = {'Accept': "application/json"})
+response = safe_requests.get(url, headers = {'Accept': "application/json"})
 
 data = response.json()
 
